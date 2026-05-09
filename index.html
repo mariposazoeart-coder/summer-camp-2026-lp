@@ -83,6 +83,11 @@ section{padding:72px 20px;position:relative;z-index:1}
 
 /* PAIN */
 .psec{}
+.phd{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.phd-txt{flex:1;min-width:240px}
+.phd-img{flex-shrink:0;width:200px;max-width:38%}
+.phd-img img{display:block;width:100%;height:auto}
+@media(max-width:768px){.phd{flex-direction:column-reverse;gap:8px;text-align:center}.phd-img{width:160px;max-width:60%}.phd-txt{text-align:left;width:100%}}
 .pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:36px}
 .pc2{background:var(--yl-pale);border:2px solid var(--yl2);border-radius:var(--r22);padding:22px;display:flex;gap:14px}
 .pic{width:42px;height:42px;border-radius:50%;background:var(--yl);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#7c2d12}
@@ -372,8 +377,13 @@ footer{background:#0c1a2e;color:rgba(255,255,255,.5);padding:36px 20px;text-alig
 
 <section class="psec">
   <div class="w">
-    <div class="sl fi">保護者の方へ</div>
-    <h2 class="st fi">こんなお悩み、<br>ありませんか？</h2>
+    <div class="phd fi">
+      <div class="phd-txt">
+        <div class="sl">保護者の方へ</div>
+        <h2 class="st">こんなお悩み、<br>ありませんか？</h2>
+      </div>
+      <div class="phd-img"><img src="images/nayami_sashie.png" alt="海外留学について悩む保護者と子どものイラスト"></div>
+    </div>
     <div class="pg">
       <div class="pc2 fi"><div class="pic"><svg class="ic"><use href="#i-think"/></svg></div><p>夏休み、成長につながる体験をさせたいけど何がいいかわからない…</p></div>
       <div class="pc2 fi"><div class="pic"><svg class="ic"><use href="#i-globe"/></svg></div><p>子どもにはもっと広い世界を見てほしいけど、選択肢が多すぎる…</p></div>
