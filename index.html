@@ -10,7 +10,7 @@
   --c1:#0284c7;--c2:#38bdf8;--c3:#7dd3fc;
   --pk:#ec4899;--pk2:#f472b6;--pk-pale:#fce7f3;
   --nv:#1e40af;--nv2:#3b82f6;
-  --yl:#facc15;--yl2:#fde047;--yl-pale:#fefce8;
+  --yl:#fcd34d;--yl2:#fde68a;--yl-pale:#fffbeb;
   --pale:#e0f2fe;--palest:#f0f9ff;
   --dk:#0c1a2e;--mid:#334155;--mu:#64748b;
   --w:#fff;--br:#e2e8f0;
@@ -58,7 +58,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,255,255,
 .hwrap picture{display:block;width:100%}
 .himg{display:block;width:100%;height:auto;vertical-align:bottom}
 .hbtm{background:linear-gradient(180deg,#38bdf8,#7dd3fc);padding:28px 20px 40px;text-align:center;position:relative}
-.hbadge{display:inline-flex;align-items:center;gap:8px;background:var(--yl);color:#7c2d12;font-size:12px;font-weight:800;padding:7px 18px;border-radius:99px;margin-bottom:22px;letter-spacing:.05em;box-shadow:0 3px 10px rgba(250,204,21,.4)}
+.hbadge{display:inline-flex;align-items:center;gap:8px;background:var(--yl);color:var(--nv);font-size:12px;font-weight:800;padding:7px 18px;border-radius:99px;margin-bottom:22px;letter-spacing:.05em;box-shadow:0 3px 10px rgba(252,211,77,.45)}
 .hbtns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:32px}
 .bh1{background:var(--pk);color:var(--w);padding:16px 34px;border-radius:99px;font-size:15px;font-weight:800;box-shadow:0 6px 22px rgba(236,72,153,.45);transition:all .2s}
 .bh1:hover{opacity:.92;transform:translateY(-2px)}
@@ -72,7 +72,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,255,255,
 .ts{padding:20px;position:relative;z-index:1}
 .tsi{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-around;flex-wrap:wrap;gap:18px;background:rgba(255,255,255,.95);border-radius:14px;padding:20px 28px;box-shadow:0 4px 16px rgba(2,132,199,.1)}
 .ti{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--mid)}
-.tic{width:36px;height:36px;border-radius:50%;background:var(--yl);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#7c2d12}
+.tic{width:36px;height:36px;border-radius:50%;background:var(--yl);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--nv)}
 .tic .ic{width:18px;height:18px;vertical-align:0}
 
 /* SECTIONS */
@@ -90,8 +90,8 @@ section{padding:72px 20px;position:relative;z-index:1}
 .phd-img img{display:block;width:100%;height:auto}
 @media(max-width:768px){.phd{flex-direction:column-reverse;gap:8px;text-align:center}.phd-img{width:160px;max-width:60%}.phd-txt{text-align:left;width:100%}}
 .pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:36px}
-.pc2{background:var(--yl-pale);border:2px solid var(--yl2);border-radius:var(--r22);padding:22px;display:flex;gap:14px}
-.pic{width:42px;height:42px;border-radius:50%;background:var(--yl);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#7c2d12}
+.pc2{background:var(--yl-pale);border:1px solid var(--br);border-radius:var(--r22);padding:22px;display:flex;gap:14px}
+.pic{width:42px;height:42px;border-radius:50%;background:var(--yl);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--nv)}
 .pic .ic{width:20px;height:20px;vertical-align:0}
 .pc2 p{font-size:14px;color:var(--mid);line-height:1.7}
 .br2{background:linear-gradient(135deg,var(--nv),var(--nv2));color:var(--w);border-radius:var(--r22);padding:28px 32px;margin-top:28px;text-align:center;box-shadow:0 6px 20px rgba(30,64,175,.25)}
@@ -382,7 +382,7 @@ footer{background:#0c1a2e;color:rgba(255,255,255,.5);padding:36px 20px;text-alig
     <div class="phd fi">
       <div class="phd-txt">
         <div class="sl">保護者の方へ</div>
-        <h2 class="st">こんなお悩み、<br>ありませんか？</h2>
+        <h2 class="st">こんなお悩み、ありませんか？</h2>
       </div>
       <div class="phd-img"><img src="images/nayami_sashie.png" alt="海外留学について悩む保護者と子どものイラスト"></div>
     </div>
@@ -390,7 +390,6 @@ footer{background:#0c1a2e;color:rgba(255,255,255,.5);padding:36px 20px;text-alig
       <div class="pc2 fi"><div class="pic"><svg class="ic"><use href="#i-think"/></svg></div><p>夏休み、成長につながる体験をさせたいけど何がいいかわからない…</p></div>
       <div class="pc2 fi"><div class="pic"><svg class="ic"><use href="#i-globe"/></svg></div><p>子どもにはもっと広い世界を見てほしいけど、選択肢が多すぎる…</p></div>
       <div class="pc2 fi"><div class="pic"><svg class="ic"><use href="#i-book"/></svg></div><p>英語の勉強、ただの習いごとじゃ身につかない気がする…</p></div>
-      <div class="pc2 fi"><div class="pic"><svg class="ic"><use href="#i-plane"/></svg></div><p>初めての海外、子どもだけで送り出すのが不安で踏み出せない…</p></div>
     </div>
     <div class="br2 fi">
       <p>そんなご家族の声から生まれたのが、<br><strong>"安心して送り出せる" 小学生・中学生向け海外サマースクールです。</strong><br>現地を熟知したスタッフが、子どもの成長と保護者の安心を両方サポートします。</p>
