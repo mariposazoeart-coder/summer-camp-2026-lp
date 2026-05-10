@@ -49,7 +49,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,255,255,
 .mm.open{display:block}
 
 /* URGENCY */
-.ub{background:linear-gradient(90deg,var(--pk),var(--og));color:var(--w);text-align:center;padding:9px 20px;font-size:13px;font-weight:700;position:sticky;top:58px;z-index:150}
+.ub{background:linear-gradient(90deg,var(--pk),var(--og));color:var(--w);padding:9px 0;font-size:13px;font-weight:700;position:sticky;top:58px;z-index:150;overflow:hidden;white-space:nowrap}
+.ub-mq{display:inline-block;padding-left:100%;animation:ubmq 22s linear infinite}
+.ub-mq:hover{animation-play-state:paused}
+@keyframes ubmq{0%{transform:translate3d(0,0,0)}100%{transform:translate3d(-100%,0,0)}}
 .ub span{opacity:.9;font-weight:400}
 
 /* HERO */
@@ -342,7 +345,7 @@ footer{background:#0c1a2e;color:rgba(255,255,255,.5);padding:36px 20px;text-alig
   <a href="#form" onclick="cm()"><svg class="ic"><use href="#i-clip"/></svg> お申し込みフォーム <svg class="ic"><use href="#i-arrow"/></svg></a>
 </div>
 
-<div class="ub"><svg class="ic"><use href="#i-fire"/></svg> 早期申込割引 実施中！　各キャンプ開始1ヶ月前までの全額支払いで <strong>RM 1,000 OFF</strong>　<span>│ 残席わずか・お早めに</span></div>
+<div class="ub"><span class="ub-mq"><svg class="ic"><use href="#i-fire"/></svg>　早期申込割引実施中！　各学校・キャンプ毎に日程が選べます　お早めのお申し込み推奨！　　<svg class="ic"><use href="#i-fire"/></svg>　早期申込割引実施中！　各学校・キャンプ毎に日程が選べます　お早めのお申し込み推奨！</span></div>
 
 <section class="hero">
   <div class="hwrap">
@@ -367,16 +370,6 @@ footer{background:#0c1a2e;color:rgba(255,255,255,.5);padding:36px 20px;text-alig
   </div>
 </section>
 
-<div class="ts">
-  <div class="tsi">
-    <div class="ti"><div class="tic"><svg class="ic"><use href="#i-school"/></svg></div>国際認定校3校と提携</div>
-    <div class="ti"><div class="tic"><svg class="ic"><use href="#i-globe"/></svg></div>多国籍の生徒が集まるキャンパス</div>
-    <div class="ti"><div class="tic"><svg class="ic"><use href="#i-user"/></svg></div>ネイティブ講師・少人数制</div>
-    <div class="ti"><div class="tic"><svg class="ic"><use href="#i-plane"/></svg></div>渡航サポートあり</div>
-    <div class="ti"><div class="tic"><svg class="ic"><use href="#i-chat"/></svg></div>日本語で相談OK</div>
-  </div>
-</div>
-
 <section class="psec">
   <div class="w">
     <div class="phd fi">
@@ -392,7 +385,7 @@ footer{background:#0c1a2e;color:rgba(255,255,255,.5);padding:36px 20px;text-alig
       <div class="pc2 fi"><div class="pic"><svg class="ic"><use href="#i-book"/></svg></div><p>英語の勉強、ただの習いごとじゃ身につかない気がする…</p></div>
     </div>
     <div class="br2 fi">
-      <p>そんなご家族の声から生まれたのが、<br><strong>"安心して送り出せる" 小学生・中学生向け海外サマースクールです。</strong><br>現地を熟知したスタッフが、子どもの成長と保護者の安心を両方サポートします。</p>
+      <p>そんなご家族の不安を解消するために生まれたのが、<br><strong>"ママ講座生専用：短期留学サポートシステム"</strong><br>現地を直接知ってる×英語対応できるスタッフが、お子様の成長と保護者の安心を両方サポートします。</p>
     </div>
   </div>
 </section>
