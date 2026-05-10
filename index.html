@@ -122,7 +122,7 @@ section{padding:72px 20px;position:relative;z-index:1}
 /* SCHOOLS */
 .ssc{}
 .sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;margin-top:44px}
-.sc{background:var(--w);border-radius:var(--r22);overflow:hidden;border:1px solid var(--br);box-shadow:var(--s1);transition:all .2s;cursor:pointer}
+.sc{background:var(--w);border-radius:var(--r22);overflow:hidden;border:1px solid var(--br);box-shadow:var(--s1);transition:all .2s;cursor:pointer;display:flex;flex-direction:column}
 .sc:hover{box-shadow:var(--s2);transform:translateY(-4px)}
 .sc.hot{border:2px solid var(--c2);box-shadow:0 0 0 4px rgba(14,165,233,.08)}
 .sth{height:170px;display:flex;align-items:center;justify-content:center;position:relative}
@@ -135,7 +135,8 @@ section{padding:72px 20px;position:relative;z-index:1}
 .sb.og{background:var(--og);color:var(--w)}
 .sb.bl{background:var(--c1);color:var(--w)}
 .sb.gr{background:rgba(255,255,255,.3);color:var(--w)}
-.sbdy{padding:22px}
+.sbdy{padding:22px;flex:1;display:flex;flex-direction:column}
+.sbdy .bsc{margin-top:auto}
 .sn{font-size:16px;font-weight:700;margin-bottom:3px}
 .sl2{font-size:12px;color:var(--c2);margin-bottom:12px}
 .stg{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px}
@@ -143,7 +144,7 @@ section{padding:72px 20px;position:relative;z-index:1}
 .sp{font-size:13px;color:var(--mu);margin-bottom:14px}
 .sp strong{font-size:15px;color:var(--dk)}
 .bsc{width:100%;padding:11px;border-radius:var(--r8);border:none;color:var(--w);font-size:13px;font-weight:700;text-align:center;cursor:pointer;background:var(--c1);transition:all .2s;box-shadow:0 3px 10px rgba(2,132,199,.25)}
-.bsc:hover,.sc.hot .bsc{background:var(--nv);color:var(--w)}
+.bsc:hover{background:var(--nv);color:var(--w)}
 .bsc.bapp{background:linear-gradient(90deg,var(--pk),var(--og));box-shadow:0 3px 10px rgba(249,115,22,.3)}
 .bsc.bapp:hover{background:linear-gradient(90deg,var(--pk),var(--og));opacity:.92}
 
