@@ -38,7 +38,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,255,255,
 .nls{display:flex;gap:22px;list-style:none}
 .nls a{font-size:13px;font-weight:500;color:var(--mid);transition:color .2s}
 .nls a:hover{color:var(--c2)}
-.nc{background:var(--pk);color:var(--w);padding:9px 20px;border-radius:99px;font-size:13px;font-weight:700;white-space:nowrap;transition:opacity .2s;box-shadow:0 3px 10px rgba(236,72,153,.35)}
+.nc{background:linear-gradient(90deg,var(--pk),var(--og));color:var(--w);padding:9px 20px;border-radius:99px;font-size:13px;font-weight:700;white-space:nowrap;transition:opacity .2s;box-shadow:0 3px 10px rgba(249,115,22,.35)}
 .nc:hover{opacity:.88}
 .hbg{display:none;flex-direction:column;gap:5px;cursor:pointer}
 .hbg span{width:22px;height:2px;background:var(--dk);border-radius:2px}
@@ -62,7 +62,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,255,255,
 .hbtm{background:linear-gradient(180deg,#38bdf8,#7dd3fc);padding:28px 20px 40px;text-align:center;position:relative}
 .hbadge{display:inline-flex;align-items:center;gap:8px;background:var(--yl);color:var(--nv);font-size:12px;font-weight:800;padding:7px 18px;border-radius:99px;margin-bottom:22px;letter-spacing:.05em;box-shadow:0 3px 10px rgba(252,211,77,.45)}
 .hbtns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:32px}
-.bh1{background:var(--pk);color:var(--w);padding:16px 34px;border-radius:99px;font-size:15px;font-weight:800;box-shadow:0 6px 22px rgba(236,72,153,.45);transition:all .2s}
+.bh1{background:linear-gradient(90deg,var(--pk),var(--og));color:var(--w);padding:16px 34px;border-radius:99px;font-size:15px;font-weight:800;box-shadow:0 6px 22px rgba(249,115,22,.45);transition:all .2s}
 .bh1:hover{opacity:.92;transform:translateY(-2px)}
 .bh2{background:var(--w);color:var(--c1);padding:16px 28px;border-radius:99px;font-size:15px;font-weight:800;border:2px solid var(--w);transition:all .2s;box-shadow:0 4px 14px rgba(2,132,199,.18)}
 .bh2:hover{background:var(--yl-pale)}
@@ -104,8 +104,8 @@ section{padding:72px 20px;position:relative;z-index:1}
 .ict{background:linear-gradient(100deg,var(--nv),var(--c1));padding:36px 20px;text-align:center;border-radius:0}
 .ict h3{font-size:18px;font-weight:700;color:var(--w);margin-bottom:18px}
 .ictb{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.bll{display:inline-flex;align-items:center;gap:10px;background:var(--w);color:var(--c1);padding:14px 30px;border-radius:99px;font-size:15px;font-weight:700;transition:all .2s;box-shadow:0 4px 16px rgba(0,0,0,.12)}
-.bll:hover{background:var(--pale);transform:translateY(-2px)}
+.bll{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(90deg,var(--pk),var(--og));color:var(--w);padding:14px 30px;border-radius:99px;font-size:15px;font-weight:700;transition:all .2s;box-shadow:0 4px 16px rgba(249,115,22,.35)}
+.bll:hover{opacity:.92;transform:translateY(-2px)}
 .bdl{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--w);padding:14px 24px;border-radius:99px;font-size:14px;font-weight:700;border:2px solid rgba(255,255,255,.5);transition:all .2s}
 .bdl:hover{background:rgba(255,255,255,.15)}
 .ld{width:22px;height:22px;background:#06c755;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;color:#fff;flex-shrink:0}
@@ -142,8 +142,8 @@ section{padding:72px 20px;position:relative;z-index:1}
 .tg{font-size:11px;padding:3px 9px;border-radius:99px;background:var(--pale);color:var(--c1);font-weight:500}
 .sp{font-size:13px;color:var(--mu);margin-bottom:14px}
 .sp strong{font-size:15px;color:var(--dk)}
-.bsc{width:100%;padding:11px;border-radius:var(--r8);border:1.5px solid var(--c2);color:var(--c1);font-size:13px;font-weight:700;text-align:center;cursor:pointer;background:transparent;transition:all .2s}
-.bsc:hover,.sc.hot .bsc{background:var(--c2);color:var(--w)}
+.bsc{width:100%;padding:11px;border-radius:var(--r8);border:none;color:var(--w);font-size:13px;font-weight:700;text-align:center;cursor:pointer;background:linear-gradient(90deg,var(--pk),var(--og));transition:all .2s;box-shadow:0 3px 10px rgba(249,115,22,.3)}
+.bsc:hover,.sc.hot .bsc{opacity:.92;color:var(--w)}
 
 /* SCHEDULE */
 .ptbs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
@@ -191,8 +191,8 @@ section{padding:72px 20px;position:relative;z-index:1}
 .prl2 li{font-size:13px;color:var(--mid);padding:7px 0;border-bottom:1px solid var(--br);display:flex;gap:8px}
 .prl2 li:last-child{border:none}
 .xck{width:17px;height:17px;border-radius:50%;background:#fee2e2;display:inline-flex;align-items:center;justify-content:center;color:#dc2626;flex-shrink:0}
-.bask{width:100%;padding:12px;border-radius:var(--r8);font-size:14px;font-weight:700;text-align:center;cursor:pointer;transition:all .2s;border:1.5px solid var(--c2);color:var(--c1);background:transparent;display:block}
-.bask:hover,.prcd.hot .bask{background:var(--c2);color:var(--w)}
+.bask{width:100%;padding:12px;border-radius:var(--r8);font-size:14px;font-weight:700;text-align:center;cursor:pointer;transition:all .2s;border:none;color:var(--w);background:linear-gradient(90deg,var(--pk),var(--og));display:block;box-shadow:0 3px 10px rgba(249,115,22,.3)}
+.bask:hover,.prcd.hot .bask{opacity:.92;color:var(--w)}
 .dcb{background:var(--w);border-radius:var(--r14);padding:22px;margin-top:24px;border:1px solid var(--br)}
 .dcb h3{font-size:15px;font-weight:700;margin-bottom:14px}
 .dcr{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-bottom:1px solid var(--br);font-size:13px;color:var(--mid)}
@@ -260,7 +260,7 @@ section{padding:72px 20px;position:relative;z-index:1}
 /* FLOAT */
 .fcta{position:fixed;bottom:0;left:0;right:0;z-index:180;background:var(--w);border-top:1px solid var(--br);padding:12px 20px;display:flex;gap:10px;box-shadow:0 -4px 20px rgba(0,0,0,.1)}
 .fb{flex:1;padding:14px;border-radius:var(--r14);font-size:14px;font-weight:700;text-align:center;cursor:pointer;transition:all .2s}
-.fb1{background:var(--pk);color:var(--w)}
+.fb1{background:linear-gradient(90deg,var(--pk),var(--og));color:var(--w)}
 .fb1:hover{opacity:.9}
 .fb2{background:var(--pale);color:var(--c1);border:1.5px solid var(--c2)}
 .fb2:hover{background:var(--c2);color:var(--w)}
@@ -425,7 +425,7 @@ footer{background:#0c1a2e;color:rgba(255,255,255,.5);padding:36px 20px;text-alig
 <div class="ict">
   <h3>今年の夏、英語で世界とつながる冒険へ！</h3>
   <div class="ictb">
-    <a href="#form" class="bll"><svg class="ic" style="color:var(--pk)"><use href="#i-clip"/></svg> お申し込みフォームへ</a>
+    <a href="#form" class="bll"><svg class="ic"><use href="#i-clip"/></svg> お申し込みフォームへ</a>
     <a href="#schools" class="bdl"><svg class="ic"><use href="#i-school"/></svg> 学校・料金を見る</a>
   </div>
 </div>
@@ -790,7 +790,7 @@ footer{background:#0c1a2e;color:rgba(255,255,255,.5);padding:36px 20px;text-alig
       <div class="fi2 fi"><button class="fq2" onclick="fq(this)">食事・アレルギー対応はありますか？<span class="far2">▼</span></button><div class="fa2">Rafflesは栄養士が管理した食事を提供しており、全食事が含まれます（寮生）。アレルギーなどのご要望は申し込み時に申告いただきます。</div></div>
       <div class="fi2 fi"><button class="fq2" onclick="fq(this)">航空券や宿泊はどうすればいいですか？<span class="far2">▼</span></button><div class="fa2">プログラム料金に航空券・宿泊は含まれていません（Raffles寮生は宿泊込み）。ジョホールバルへはシンガポール・チャンギ空港経由、またはセナイ空港（学校まで25〜30分）が便利です。親御さん同伴の場合の宿泊先もご案内します。</div></div>
     </div>
-    <div class="fct fi"><p>他にご不明な点はお気軽にお問い合わせください。<strong>講座内またはお申し込みフォームのコメント欄からどうぞ。</strong></p><a href="#form" class="bll"><svg class="ic" style="color:var(--pk)"><use href="#i-clip"/></svg> お申し込みフォームへ</a></div>
+    <div class="fct fi"><p>他にご不明な点はお気軽にお問い合わせください。<strong>講座内またはお申し込みフォームのコメント欄からどうぞ。</strong></p><a href="#form" class="bll"><svg class="ic"><use href="#i-clip"/></svg> お申し込みフォームへ</a></div>
   </div>
 </section>
 
@@ -815,7 +815,7 @@ footer{background:#0c1a2e;color:rgba(255,255,255,.5);padding:36px 20px;text-alig
     <h2 class="ctitle">今年の夏、英語で<br>世界とつながる冒険へ！</h2>
     <p class="csub">お申し込みはGoogleフォームから受付しています。<br>ご質問やご不明点はフォームのコメント欄にご記入ください。</p>
     <div style="text-align:center">
-      <a href="#form" class="bll" style="font-size:17px;padding:18px 40px"><svg class="ic" style="color:var(--pk)"><use href="#i-clip"/></svg> お申し込みフォームへ進む</a>
+      <a href="#form" class="bll" style="font-size:17px;padding:18px 40px"><svg class="ic"><use href="#i-clip"/></svg> お申し込みフォームへ進む</a>
     </div>
     <p class="cnote" style="margin-top:24px">※ お申し込み後、ご入金確認をもって正式受付となります。<br>お申し込み後の流れは「ご参加までの7ステップ」をご覧ください。</p>
   </div>
