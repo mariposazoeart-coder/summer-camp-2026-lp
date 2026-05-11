@@ -89,7 +89,19 @@ section{padding:72px 20px;position:relative;z-index:1}
 .phd{display:flex;align-items:center;gap:0;flex-wrap:wrap}
 .phd-txt{flex:1;min-width:240px}
 .phd-img{flex-shrink:0;width:340px;max-width:50%;margin-left:-40px;margin-right:-20px}
-.phd-img img{display:block;width:100%;height:auto;filter:drop-shadow(0 4px 10px rgba(15,23,42,.12))}
+.phd-img img{display:block;width:100%;height:auto;filter:drop-shadow(0 4px 10px rgba(15,23,42,.12));transform-origin:center bottom}
+.phd.vis .phd-img img{animation:wiggle .9s ease-in-out .35s 1 both}
+@keyframes wiggle{
+  0%{transform:rotate(0) translateX(0)}
+  15%{transform:rotate(-3deg) translateX(-2px)}
+  30%{transform:rotate(3deg) translateX(2px)}
+  45%{transform:rotate(-2.5deg) translateX(-1.5px)}
+  60%{transform:rotate(2deg) translateX(1.5px)}
+  75%{transform:rotate(-1deg) translateX(-1px)}
+  90%{transform:rotate(.5deg) translateX(.5px)}
+  100%{transform:rotate(0) translateX(0)}
+}
+@media(prefers-reduced-motion:reduce){.phd.vis .phd-img img{animation:none}}
 @media(max-width:768px){.phd{flex-direction:column;gap:16px;text-align:center}.phd-img{width:280px;max-width:90%;margin:0}.phd-txt{text-align:left;width:100%}}
 .pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:36px}
 .pc2{background:#f1f5f9;border:1px solid #e2e8f0;border-radius:var(--r22);padding:22px;display:flex;gap:14px}
